@@ -27,3 +27,27 @@
           }
       })
   }
+//   ====== navbar
+let times =document.getElementById('times')
+let menu =document.getElementById('menu')
+let links = document.querySelector('.links')
+
+menu.addEventListener('click',function(){
+    links.classList.add('active')
+})
+times.addEventListener('click',function(){
+    links.classList.remove('active')
+})
+// fixed navbar
+let navbar = document.querySelector('.navbar');
+let navlinks = navbar.querySelector('links a')
+window.addEventListener('load',()=>{
+    let navH = navbar.getBoundingClientRect().height;
+    let scrHi = window.pageYOffset;
+    console.log(scrHi)
+    if(scrHi > navH){
+        navbar.classList.add('fixed-nav')
+    }else{
+        navbar.classList.remove('fixed-nav')
+    }
+})
