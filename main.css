@@ -151,36 +151,6 @@ body{
     padding: 20px;
     border-radius:4px;
 }
-.services .container .card.c1{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.3))
-    ,url(/img/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg) center center/cover;
-   
-}
-.services .container .card.c2{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.3))
-    ,url(/img/stefan-vladimirov-Q_Moi2xjieU-unsplash.jpg) center center/cover;
-   
-}
-.services .container .card.c3{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.3))
-    ,url(/img/smartworks-coworking-Uz8THWPXwhI-unsplash.jpg) center center/cover;
-   
-}
-.services .container .card.c4{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5))
-    ,url(/img/steward-masweneng-nUOpSNGiT1s-unsplash.jpg) center center/cover;
-   
-}
-.services .container .card.c5{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.3))
-    ,url(/img/emiliano-vittoriosi-dsy_ILnH69A-unsplash.jpg) center center/cover;
-   
-}
-.services .container .card.c6{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.5))
-    ,url(/img/krakenimages-7BpuzmcxlHU-unsplash.jpg) center center/cover;
-   
-}
 .services .container .card h1{
     font-size: 24px;
     font-weight: 700;
@@ -282,54 +252,6 @@ body{
 }
 .tesimonial .container .card p{
     line-height: 1.4;
-}
-/* filter */
-.filter .container .btns{
-    background-color: var(--secondColor);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    /* text-align: center; */
-}
-.filter .container .btns .btn.all{
-    padding: 10px 45px;
-}
-.filter .container .btns .btn.active{
-    background-color: var(--thirdRed);
-    color: var(--primaryColor);
-}
-.filter .container .btns .btn{
-    text-transform: capitalize;
-    font-family: satisfy;
-    padding: 10px 40px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    cursor: pointer;
-
-}
-.filter .container .images{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 10px;
-    /* background-color: #fff; */
-    padding: 10px;
-}
-.filter .container .images img.hide{
-    display: none;
-}
-.filter .container .images img.show{
-    display: grid;
-    animation: zoom .2s ease-in-out;
-}
-@keyframes zoom{
-    0%{
-        transform: scale(0.8);
-    }
-    100%{
-        transform: scale(1);
-    }
 }
 /* foootter */
 footer{
