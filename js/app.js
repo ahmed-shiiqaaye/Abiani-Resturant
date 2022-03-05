@@ -40,7 +40,6 @@ times.addEventListener('click',function(){
 })
 // fixed navbar
 let navbar = document.querySelector('.navbar');
-let navlinks = navbar.querySelector('links a')
 window.addEventListener('load',()=>{
     let navH = navbar.getBoundingClientRect().height;
     let scrHi = window.pageYOffset;
