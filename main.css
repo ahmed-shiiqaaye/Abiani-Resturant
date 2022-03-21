@@ -24,8 +24,21 @@ img{
 .container{
     max-width: 900px;
     margin: 0 auto;
+    /* padding: 20px; */
 }
-
+.buton{
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: var(--secondColor);
+    color: var(--primaryColor);
+    transition: all .3s ease-in-out;
+    border: none;
+    outline: none;
+}
+.buton:hover{
+    background: var(--thirdRed);
+}
 body{
     font-family: 'josefin sans', sans-serif;
     background-color: black;
@@ -79,7 +92,7 @@ body{
     height: 80vh;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6) 50%),
-    url(./img/siyuan-g_V2rt6iG7A-unsplash.jpg) center center/cover;
+    url(./img/home-min.jpg) center center/cover;
      display: flex;
     justify-content: center;
     align-items: center;
@@ -133,6 +146,7 @@ body{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
+    padding: 20px 0;
 }
 .section .title .title-span{
     color: var(--thirdRed);
@@ -204,6 +218,10 @@ body{
     font-size: 18px;
 }
 /* testimonials */
+.tesimonial .title{
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
 .tesimonial .container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
@@ -325,25 +343,29 @@ footer .row .col.c3 ul li i:hover{
     color: var(--primaryColor);
     padding: 40px 20px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.7))
-    ,url(./img/eunice-stahl-CxiJt88QJdQ-unsplash.jpg) center center/cover;
+    ,url(./img/form-min.jpg) center center/cover;
     /* text-transform: capitalize; */
 }
 .contact .container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
 }
+.contact .container .list{
+    margin-top: 15px;
+}
 .contact .container .list ul li{
     margin: 8px 0;
 }
 .contact .container .list ul li span.icon{
     color: var(--thirdRed);
+    margin-right: 8px;
 
 }
 .contact .container .list .social-links{
     margin: 20px 0;
 }
 .contact .container .list .social-links h2{
-    /* margin: 20px 0 0; */
+    margin-bottom: 10px;
     color: var(--thirdRed);
 }
 .contact .container .list .social-links ul{
@@ -380,16 +402,209 @@ footer .row .col.c3 ul li i:hover{
     display: block;
     width: 70%;
     border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+.contact .container form .control button:hover{
+    background: #c4192d;
+    color: #f6cfb2;
+}
+/* go  */
+.go{
+    background: white;
+    border:1px solid var(--thirdRed);
+    width: 35px;
+    height: 45px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 222;
+}
+.go a{
+    color: var(--thirdRed);
+    transform: rotate(90deg);
 }
 
+/* menu */
+.menu{
+    background:white;
+    padding: 80px 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .89),rgba(250, 250, 250, 0.89))
+    ,url(./img/food.jpg) center center/cover;
+}
+.menu .container{
+    padding: 0 20px;
+}
+.menu .container .head{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.menu .container .head .head-title{
+    text-transform: uppercase;
+    margin-bottom:20px;
+    font-weight: 800;
+    color: var(--thirdRed);
+}
+.menu .container .head p{
+    color:rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+    font-family: nunito;
+}
+.menu .container .body{
+    display: grid;
+    gap: 40px;
+    column-gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.menu .container .body .item h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #c4192d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu .container .body .item .item-item{
+    margin-bottom: 10px;
+}
+.menu .container .body .item .item-item .line{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    /* color: #13828a; */
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.menu .container .body .item .item-item .text{
+    font-size: 15px;
+    color:rgba(0, 0, 0, 0.67);
+    font-family: nunito;
+}
+.menu .container .buton{
+    display: block;
+    border: none;
+    outline: none;
+    width: 70%;
+    margin: 30px auto;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+.popular{
+    background: white;
+    padding: 70px 0;
+}
+.popular .container{
+    padding: 20px;
+}
+.popular .container .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.popular .container .title h1{
+    text-transform: uppercase;
+    color: #c4192d;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.popular .container .title p{
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: nunito;
+}
+.popular .container .title h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60%;
+    height: 3px;
+    background: #c4192d;
+}
+.popular .container .grid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.popular .container .grid .card{
+    border:1px solid rgba(0, 0, 0, 0.2);
+}
+.popular .container .grid .card .img{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular .container .grid .card .img img{
+    width: 180px;
+    height: 180px;
+}
+.popular .container .grid .card .text{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.popular .container .grid .card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popular .container .grid .text h2{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 23px;
+    color: var(--thirdRed);
+    font-family:satisfy;
+}
+.popular .container .grid .text p{
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: nunito, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.popular .container .grid .text .price{
+    font-size: 26px;
+    margin: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: var(--thirdRed);   
+}
+.popular .container .buton{
+    cursor: pointer;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.popular .container .buton:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
 
-
-
-
-
-
-
-
+.popular .container .title .date{
+    display: flex;
+    justify-content: center;
+    font-family: nunito;
+    margin-top: 30px;
+}
+.popular .container .title .date .hrs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.popular .container .title .date .hrs .n0{
+    font-size: 35px;
+    color: var(--thirdRed);
+}
+.popular .container .title .date .hrs .na{
+    font-size: 13px;
+    font-family: satisfy;
+}
 
 
 
