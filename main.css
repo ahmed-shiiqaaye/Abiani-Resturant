@@ -598,14 +598,26 @@ footer .row .col.c3 ul li i:hover{
     margin: 10px;
 }
 .popular .container .title .date .hrs .n0{
-    font-size: 35px;
-    color: var(--thirdRed);
+    font-size: 45px;
+    /* color:#213159; */
+    color: #3d6098;
+    font-weight: 800;
+    font-family: satisfy;
 }
 .popular .container .title .date .hrs .na{
     font-size: 13px;
     font-family: satisfy;
+    color: var(--thirdRed);
 }
-
+.popular .container .title .p{
+    color:#3d6098;
+    text-transform: uppercase;
+}
+.popular .container .title .p span{
+    color: #c4192d;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 
 
