@@ -759,3 +759,9 @@ footer .container p span{
     }
 }
 
+@media (max-width: 20px){
+    .showcase{
+        align-items: flex-start;
+    }
+}
+
